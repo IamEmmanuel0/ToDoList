@@ -1,0 +1,91 @@
+/*To-do list*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+body{
+    text-align: center;
+}
+
+main {
+    margin: 50px 20%;
+    border: 1px #000 solid;
+    padding: 10px 5px;
+    height: 80vh;
+    background-color: lightblue;
+}
+
+#listContainer{
+    border: 1px rgb(122, 117, 117) solid;
+    padding: 10px;
+    height: 65vh;
+    background-color: #fff;
+    overflow-x: hidden;
+    
+}
+
+ul>li{
+    list-style: none;
+    border-bottom: 1px rgb(197, 178, 178) solid;
+    padding-top: 2px;
+    background: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul>li>span{
+    padding-left: 5px;
+}
+
+ul>li>input[type=button],
+form>input[type=button]
+{
+    width: 23px;
+    padding-bottom: 1.8px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: red;
+    color: #fff;
+}
+
+form>input[type=button]{
+    font-weight: 800;
+    /*padding-top: 0.5px;
+    padding-bottom: 3.2px;*/
+    width: 30px;
+    background-color: blue;
+    color: #fff;
+}
+
+form{
+    margin: 10px;
+    align-items: center;
+}
+form>input[type=text]{
+    padding: 5px;
+    width: 80%;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:500px) {
+    main{
+        margin:10px;
+    }
+    form>input[type=button]{
+    width: 28px;
+    }
+}
+@media screen and (max-height:500px) {
+    main{
+        height: 70%;
+        margin:5px;
+    }
+    form>input[type=button]{
+    width: 28px;
+    }
+}
